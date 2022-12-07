@@ -10,14 +10,18 @@
 
 # * * * * * * * * *
 
+def triangle(n):
+    for i in range(1,n+1):
+        for j in range(1,2*i):
+            print('*', end=' ')
+        print()
+        print()
 n=5
-for i in range(1,n+1):
-    for j in range(1,2*i):
-        print('*', end=' ')
-    print()
-    print()
+triangle(n)
 # solution2
+def triangle2(n):
+    for i in range(0,n):
+        print('* '*(2*i+1))
+        print()
 n=5
-for i in range(0,n):
-    print('* '*(2*i+1))
-    print()
+triangle2(n) 
