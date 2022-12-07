@@ -1,19 +1,24 @@
 # Take a number as input from the user. Print the number in reversed order. 
 # For example, for input 567, output should be: 765
 
-n = 567
-rev=0
-for i in range(len(str(n))):
-    rem = n%10
-    rev=rev*10+rem
-    n=n//10
-print(rev)
+def reverse_number(num,n):
+    rev=0
+    for i in range(n):
+        rem = num%10
+        rev=rev*10+rem
+        num=num//10
+    print(rev)
+num=int(input())
+n = len(str(num))
+reverse_number(num,n)
 
-# 2nd solution
-n=567
-rev=0
-while n!=0:
-    rem=n%10
-    rev=rev*10+rem
-    n=n//10
-print(rev)
+# 2nd
+def reverse_number(num):
+    rev=0
+    while num!=0:
+        rem=num%10
+        rev=rev*10+rem
+        num=num//10
+    print(rev)
+num=int(input())
+reverse_number(num)
