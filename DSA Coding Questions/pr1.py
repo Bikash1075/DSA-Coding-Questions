@@ -11,9 +11,12 @@
 
 # E E E E E
 
+def triangle(s,n):
+    for i in range(n):
+        for j in range(1,i+2):
+            print(s[i],end=' ')
+        print()
+        print()
 s='ABCDE'
-for i in range(len(s)):
-    for j in range(1,i+2):
-        print(s[i],end=' ')
-    print()
-    print()
+n=len(s)
+triangle(s,n)
