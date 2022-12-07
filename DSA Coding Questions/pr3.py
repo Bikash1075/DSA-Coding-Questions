@@ -12,7 +12,7 @@ num=int(input())
 n = len(str(num))
 reverse_number(num,n)
 
-# 2nd
+# 2nd approach
 def reverse_number(num):
     rev=0
     while num!=0:
