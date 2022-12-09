@@ -37,12 +37,23 @@ n = len(arr)
 print(peak_element(arr,n))
 
 # 3rd approach
+def peak_element(arr,n):
+    for i in range(1,n-1):
+        if arr[i-1]<arr[i] and arr[i+1]<arr[i]:
+            print(arr[i])
+arr=[10, 20, 15, 2, 23, 90, 67]
+n=len(arr)
+peak_element(arr,n)
+
+
+# 3rd approach
 arr = [10, 20, 15, 2, 23, 90, 67]
-def peak_element(arr):
-    for i in range(1,len(arr)):
+def peak_element(arr,n):
+    for i in range(1,n-1):
         if arr[i]>arr[i-1]:
             if arr[i]==arr[len(arr)-1]:
                 pass
             elif arr[i]>arr[i+1]:
                 print(arr[i])
-peak_element(arr)
+arr=arr = [10, 20, 15, 2, 23, 90, 67]
+peak_element(arr,n)
