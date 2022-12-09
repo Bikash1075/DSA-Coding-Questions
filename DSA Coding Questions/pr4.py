@@ -17,4 +17,31 @@
 # Output: 20 or 90
 
 # Explanation: The element 20 has neighbors 10 and 15, 
-# both of them are less than 20, similarly 90 has neighbors 23 and 67.
+# both of them are less than 20, similarly 90 has 
+# neighbors 23 and 67.
+
+def peak_element(arr,n):
+    for i in range(n):
+        if (arr[i] > arr[i - 1] and arr[i] > arr[i + 1]) :
+            return arr[i]
+arr=[10, 20, 15, 2, 23, 90, 67]
+n = len(arr)
+print(peak_element(arr,n))
+
+def peak_element(arr,n):
+    for i in range(n-1,0,-1):
+        if (arr[i] > arr[i - 1] and arr[i] > arr[i + 1]) :
+            return arr[i]
+arr=[10, 20, 15, 2, 23, 90, 67]
+n = len(arr)
+print(peak_element(arr,n))
+
+arr = [10, 20, 15, 2, 23, 90, 67]
+def peak_element(arr):
+    for i in range(1,len(arr)):
+        if arr[i]>arr[i-1]:
+            if arr[i]==arr[len(arr)-1]:
+                pass
+            elif arr[i]>arr[i+1]:
+                print(arr[i])
+peak_element(arr)
