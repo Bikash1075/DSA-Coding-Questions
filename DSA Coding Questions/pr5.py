@@ -24,7 +24,8 @@ def circularlly_rotated(arr,n):
     return(arr)
 arr=[1,2,3,4,5]
 n= len(arr)
-print(circularlly_rotated(arr,n))
+circularlly_rotated(arr,n)
+
 
 
 
