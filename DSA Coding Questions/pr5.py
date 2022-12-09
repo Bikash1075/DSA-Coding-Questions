@@ -15,7 +15,6 @@ arr=[1,2,3,4,5]
 n= len(arr)
 print(rotation(arr,n))
 
-# 2nd approach
 def circularlly_rotated(arr,n):
     temp=[]
     for j in range(n):

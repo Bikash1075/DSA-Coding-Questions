@@ -36,7 +36,7 @@ arr=[10, 20, 15, 2, 23, 90, 67]
 n = len(arr)
 print(peak_element(arr,n))
 
-# prasad's approach
+# 3rd approach
 arr = [10, 20, 15, 2, 23, 90, 67]
 def peak_element(arr):
     for i in range(1,len(arr)):
