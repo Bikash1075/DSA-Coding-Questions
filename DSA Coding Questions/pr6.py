@@ -14,10 +14,61 @@
 
 # Explanation: The subsequence 36, 35, 33, 34, 32 is the longest subsequence of consecutive elements.
 
-def long_con_num(arr,n):
-    for i in range(n):
-        
-
+# 1st approach
+def long_run(arr,n):
+    seq=[]
+    arr.sort()
+    for i in range (1,n):
+        if arr[i]-arr[i-1] ==1:
+            seq.append(arr[i])
+            seq.append(arr[i-1])
+        else:
+            break
+    print(len(set(seq)))
 arr=[36, 41, 56, 35, 44, 33, 34, 92, 43, 32, 42]
+n = len(arr)
+long_run(arr,n)
+
+# 2nd approach
+def long_run(arr,n):
+    seq=[]
+    arr.sort()
+    for i in range (1,n):
+        if arr[i-1]-arr[i] ==-1:
+            seq.append(arr[i])
+            seq.append(arr[i-1])
+        else:
+            break
+    print(len(set(seq)))
+arr=[36, 41, 56, 35, 44, 33, 34, 92, 43, 32, 42]
+n = len(arr)
+long_run(arr,n)
+
+def long_run(arr,n):
+    seq=[]
+    arr.sort()
+    for i in range (n):
+        if arr[i+1]-arr[i] ==1:
+            seq.append(arr[i])
+            seq.append(arr[i-1])
+        else:
+            break
+    print(len(set(seq)))
+arr=[36, 41, 56, 35, 44, 33, 34, 92, 43, 32, 42]
+n = len(arr)
+long_run(arr,n)
+
+# 3rd approach
+def logest_subsequence(arr,n):
+    arr.sort()
+    seq = []
+    for i in range(1,n):
+        if  0<arr[i]-arr[i-1]<3:
+            seq.append(arr[i-1])
+            seq.append(arr[i])
+        else:
+            break
+    print(len(set(seq)))
+arr = [36, 41, 56, 35, 44, 33, 34, 92, 43, 32, 42]
 n=len(arr)
-print(long_con_num(arr,n))
+logest_subsequence(arr,n)

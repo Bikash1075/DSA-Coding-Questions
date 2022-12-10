@@ -22,3 +22,4 @@ def reverse_number(num):
     print(rev)
 num=int(input())
 reverse_number(num)
+
