@@ -27,9 +27,9 @@ n=5
 triangle2(n) 
 
 #3rd approach
-
-def triangle (n):
-    for i in range (n):
-        print ('* '*(2*i+1))
-      print ()
-triangle (5)
+def triangle3(n):
+    for i in range(1,n+1):
+        print('* '*(2*i-1))
+        print()
+n=5
+triangle3(n) 
