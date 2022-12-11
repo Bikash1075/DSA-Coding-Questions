@@ -25,3 +25,11 @@ def triangle2(n):
         print()
 n=5
 triangle2(n) 
+
+#3rd approach
+
+def triangle (n):
+    for i in range (n):
+        print ('* '*(2*i+1))
+      print ()
+triangle (5)
