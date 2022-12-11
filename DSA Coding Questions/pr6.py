@@ -44,6 +44,7 @@ arr=[36, 41, 56, 35, 44, 33, 34, 92, 43, 32, 42]
 n = len(arr)
 long_run(arr,n)
 
+# 2nd approach
 def long_run(arr,n):
     seq=[]
     arr.sort()
