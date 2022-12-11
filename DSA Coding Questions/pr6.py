@@ -50,7 +50,7 @@ def long_run(arr,n):
     for i in range (n):
         if arr[i+1]-arr[i] ==1:
             seq.append(arr[i])
-            seq.append(arr[i-1])
+            seq.append(arr[i+1])
         else:
             break
     print(len(set(seq)))
@@ -72,3 +72,20 @@ def logest_subsequence(arr,n):
 arr = [36, 41, 56, 35, 44, 33, 34, 92, 43, 32, 42]
 n=len(arr)
 logest_subsequence(arr,n)
+
+def long_run(arr,n):
+    seq=[]
+    arr.sort()
+    count=0
+    for i in range (n):
+        if arr[i+1]-arr[i] ==1:
+            seq.append(arr[i])
+            seq.append(arr[i+1])
+        else:
+            break
+    for  i in range(len(set(seq))):
+        count=count+1
+    return(count),set(seq)
+arr=[36, 41, 56, 35, 44, 33, 34, 92, 43, 32, 42]
+n = len(arr)
+print(long_run(arr,n))
