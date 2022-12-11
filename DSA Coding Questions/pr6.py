@@ -87,7 +87,7 @@ def long_run(arr,n):
             break
     for  i in range(len(set(seq))):
         count=count+1
-    return(count),set(seq)
+    return(count)
 arr=[36, 41, 56, 35, 44, 33, 34, 92, 43, 32, 42]
 n = len(arr)
 print(long_run(arr,n))
