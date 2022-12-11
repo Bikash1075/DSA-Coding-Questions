@@ -73,6 +73,7 @@ arr = [36, 41, 56, 35, 44, 33, 34, 92, 43, 32, 42]
 n=len(arr)
 logest_subsequence(arr,n)
 
+# 4th approach
 def long_run(arr,n):
     seq=[]
     arr.sort()
